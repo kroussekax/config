@@ -1,0 +1,5 @@
+hyprctl dispatch togglespecialworkspace magic
+hyprctl dispatch movetoworkspace +0
+hyprctl dispatch togglespecialworkspace magic
+hyprctl dispatch movetoworkspace special:magic
+hyprctl dispatch togglespecialworkspace magic
