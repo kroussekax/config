@@ -5,7 +5,6 @@ size=$(echo -e "small\nmedium\nlarge\nbox" | wofi --dmenu -p "Choose size:")
 
 # Validate input
 if [[ ! $size =~ ^(small|medium|large|box)$ ]]; then
-    notify-send "Invalid input" "Please choose: small, medium, or large"
     exit 1
 fi
 

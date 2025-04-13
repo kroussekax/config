@@ -67,6 +67,9 @@ end)
 vim.api.nvim_set_keymap('n', '>', ':vertical resize +10<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<', ':vertical resize -10<CR>', { noremap = true, silent = true })
 
+vim.keymap.set({ 'n' }, '<C-k>', function()       require('lsp_signature').toggle_float_win()
+end, { silent = true, noremap = true, desc = 'toggle signature' })
+
 -- Tagbar
 vim.keymap.set("n", "<leader>=", function()
 	vim.cmd("TagbarOpen")
